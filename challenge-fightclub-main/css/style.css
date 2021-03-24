@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    color: white;
+}
+
+.navbar ul {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 55%;
+    top: 80%;
+    width: 532px;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 17px;
+}
+
+.logo {
+    width: 100px;
+    height: 85px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+#imgfc {
+    width: 650px;
+    height: 760px;
+    background-image: url(../images/Gre-97.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px auto;
+}
+
+.fr {
+    color: rgba(255, 255, 255, 0);
+    font-size: 70px;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.274);
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top: 542px;
+    padding-left: 20px;
+    z-index: -1;
+}
+
+.ydt {
+    color: white;
+    display: block;
+    margin-top: -50px;
+    font-size: 30px;
+    margin-left: 50px;
+    letter-spacing: -1px;
+}
+
+.para {
+    color: white;
+    font-size: 12px;
+    width: 450px;
+    padding-left: 55px;
+    padding-top: 5px;
+}
+
+.itn {
+    background-color: #e2849e;
+    color: white;
+    border-radius: 0;
+    font-size: 17px;
+    margin-top: 37px;
+    margin-left: 55px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(192, 192, 192);
+}
+
+@media screen and (max-width: 750px) {
+    #imgfc {
+        width: 410px;
+        height: 715px;
+        background-position-x: -100px;
+    }
+    .fr {
+        font-size: 60px;
+    }
+    .ydt {
+        margin-top: -43px;
+        font-size: 25px;
+    }
+    .para {
+        font-size: 10px;
+        width: 375px;
+    }
+    .itn {
+        margin-top: 10px;
+    }
+    .navbar li {
+        margin-right: 15px;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .navbar ul {
+        top: 100%;
+        left: 47%;
+        width: 417px;
+    }
+    .logo {
+        display: none;
+    }
+}
