@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="switch.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="dark:bg-gray-900">
+ 
+  <div class="container px-20 py-5 mobile:px-10">
+    <div class="header flex flex-row justify-between mobile:flex-col">
+      <div class="title mobile:border-b-2">
+        <h1 class="text-2xl font-bold text-gray-800 dark:text-white">Social Media Dashboard</h1>
+        <p class="text-sm font-bold text-gray-500 dark:text-gray-400 pb-3">Total Followers: 23,004</p>
+      </div>
+      <div class="darkmode self-center mobile:self-start mobile:mt-3">
+        <span class="text-sm font-bold text-gray-400 mr-3">Dark Mode</span>
+          <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+          <input type="checkbox" name="toggle" id="toggle" class="theme-switch toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+          <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="content mt-8 flex flex-row justify-between mobile:flex-col">
+      <div class="card mr-3 bg-gray-100 w-52 h-44 rounded-md border-t-4 border-blue-500 flex flex-col items-center justify-around dark:bg-gray-800 mobile:w-full mobile:h-56 mobile:mb-5">
+      <div class="sname flex pt-2">
+          <img class="w-5" src="images/icon-facebook.svg" alt="">
+          <span class="text-sm ml-1 font-bold text-gray-500 dark:text-gray-300">@nathanf</span>
+        </div>
+        <div class="followers text-center">
+          <h1 class="text-5xl font-bold dark:text-white">1987</h1>
+          <span class="font-normal uppercase text-sm text-gray-500 tracking-widest dark:text-gray-300">Followers</span>
+        </div>
+        <div class="stats flex flex-row">
+          <img class="w-2 h-1 mt-2 mr-1" src="images/icon-up.svg" alt="">
+          <span class="text-green-500 text-sm font-bold">12 Today</span>
+        </div>
+      </div>
+      <div class="card mr-3 bg-gray-100 w-52 h-44 rounded-md border-t-4 border-blue-400 flex flex-col items-center justify-around dark:bg-gray-800 mobile:w-full mobile:h-56 mobile:mb-5">
+        <div class="sname flex pt-2">
+          <img class="w-5" src="images/icon-twitter.svg" alt="">
+          <span class="text-sm ml-1 font-bold text-gray-500 dark:text-gray-300">@nathanf</span>
+        </div>
+        <div class="followers text-center">
+          <h1 class="text-5xl font-bold dark:text-white">1044</h1>
+          <span class="font-normal uppercase text-sm text-gray-500 tracking-widest dark:text-gray-300">Followers</span>
+        </div>
+        <div class="stats flex flex-row">
+          <img class="w-2 h-1 mt-2 mr-1" src="images/icon-up.svg" alt="">
+          <span class="text-green-500 text-sm font-bold">99 Today</span>
+        </div>
+      </div>
+      <div class="card mr-3 bg-gray-100 w-52 h-44 rounded-md border-t-4 border-yellow-300 flex flex-col items-center justify-around dark:bg-gray-800 mobile:w-full mobile:h-56 mobile:mb-5">
+        <div class="sname flex pt-2">
+          <img class="w-5" src="images/icon-instagram.svg" alt="">
+          <span class="text-sm ml-1 font-bold text-gray-500 dark:text-gray-300">@realnathanf</span>
+        </div>
+        <div class="followers text-center">
+          <h1 class="text-5xl font-bold dark:text-white">11k</h1>
+          <span class="font-normal uppercase text-sm text-gray-500 tracking-widest dark:text-gray-300">Followers</span>
+        </div>
+        <div class="stats flex flex-row">
+          <img class="w-2 h-1 mt-2 mr-1" src="images/icon-up.svg" alt="">
+          <span class="text-green-500 text-sm font-bold">1099 Today</span>
+        </div>
+      </div>
+      <div class="card bg-gray-100 w-52 h-44 rounded-md border-t-4 border-red-500 flex flex-col items-center justify-around dark:bg-gray-800 mobile:w-full mobile:h-56">
+        <div class="sname flex pt-2">
+          <img class="w-5" src="images/icon-youtube.svg" alt="">
+          <span class="text-sm ml-1 font-bold text-gray-500 dark:text-gray-300">Nathan F.</span>
+        </div>
+        <div class="followers text-center">
+          <h1 class="text-5xl font-bold dark:text-white">8239</h1>
+          <span class="font-normal uppercase text-sm text-gray-500 tracking-widest dark:text-gray-300">Subscribers</span>
+        </div>
+        <div class="stats flex flex-row">
+          <img class="w-2 h-1 mt-2 mr-1" src="images/icon-down.svg" alt="">
+          <span class="text-red-500 text-sm font-bold">144 Today</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview mt-5">
+      <div class="title">
+        <h1 class="text-xl text-gray-500 font-bold dark:text-white">Overview - Today</h1>
+      </div>
+        <div class="first flex flex-row justify-between mobile:flex-col">
+          <div class="card mr-3 w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Page Views</span>
+              <img class="w-5" src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">87</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-up.svg" alt="">
+                <span class="text-green-500 text-sm font-bold self-end">3%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card mr-3 w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Likes</span>
+              <img class="w-5" src="images/icon-facebook.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">52</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-down.svg" alt="">
+                <span class="text-red-500 text-sm font-bold self-end">2%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card mr-3 w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Likes</span>
+              <img class="w-5" src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">5462</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-up.svg" alt="">
+                <span class="text-green-500 text-sm font-bold self-end">2257%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Profile Views</span>
+              <img class="w-5" src="images/icon-instagram.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">52k</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-up.svg" alt="">
+                <span class="text-green-500 text-sm font-bold self-end">1375%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="second flex flex-row justify-between mobile:flex-col">
+          <div class="card mr-3 w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Retweets</span>
+              <img class="w-5" src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">117</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-up.svg" alt="">
+                <span class="text-green-500 text-sm font-bold self-end">303%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card mr-3 w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Likes</span>
+              <img class="w-5" src="images/icon-twitter.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">507</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-up.svg" alt="">
+                <span class="text-green-500 text-sm font-bold self-end">553%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card mr-3 w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Likes</span>
+              <img class="w-5" src="images/icon-youtube.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">107</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-down.svg" alt="">
+                <span class="text-red-500 text-sm font-bold self-end">19%</span>
+              </div>
+            </div>
+          </div>
+          <div class="card w-52 h-28 bg-gray-100 mt-3 rounded-md flex flex-col p-5 dark:bg-gray-800 mobile:w-full">
+            <div class="header flex flex-row justify-between">
+              <span class="font-bold text-gray-500 text-sm dark:text-gray-300">Total Views</span>
+              <img class="w-5" src="images/icon-youtube.svg" alt="">
+            </div>
+            <div class="footer flex flex-row justify-between mt-3">
+              <h1 class="text-3xl font-bold dark:text-white">1407</h1>
+              <div class="stats flex">
+                <img class="w-2 h-1 mr-1 mt-6" src="images/icon-down.svg" alt="">
+                <span class="text-red-500 text-sm font-bold self-end">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+  </div>
+
+  <script>
+    const toggleSwitch = document.querySelector('input[type="checkbox"].theme-switch');
+
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+      toggleSwitch.checked = true;
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    function switchTheme(e)
+    {
+      if (e.target.checked) 
+      {
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.classList.add('dark');
+      } 
+      else 
+      {
+        localStorage.setItem('theme', 'light');
+        document.documentElement.classList.remove('dark');
+      }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme, false);
+  </script>
+</body>
+</html>
