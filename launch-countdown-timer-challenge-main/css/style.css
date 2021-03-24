@@ -1,0 +1,186 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #1e1e28;
+    background: -moz-linear-gradient(180deg, rgba(30, 30, 40, 1) 0, rgba(36, 28, 43, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(30, 30, 40, 1) 0, rgba(36, 28, 43, 1) 100%);
+    background-image: url(../images/pattern-hills.svg), url(../images/bg-stars.svg), linear-gradient(180deg, rgba(30, 30, 40, 1) 0, rgba(36, 28, 43, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom, top;
+}
+
+#countdown {
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translate(-50%, -50%);
+    width: 790px;
+}
+
+.launching {
+    color: #fff;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 136px;
+    font-size: 1.3em;
+    letter-spacing: 11px;
+}
+
+.days, .hours, .minutes, .seconds {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    color: #fa5f87;
+    background-color: #34364f;
+    font-size: 5em;
+    text-align: center;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    -webkit-box-shadow: 0 15px 0 -1px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0 15px 0 -1px rgba(0, 0, 0, 0.67);
+    box-shadow: 0 15px 0 -1px #1a1a22;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+
+.date {
+    font-family: "Red Hat Text", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    position: absolute;
+    margin-left: 77px;
+    margin-top: 30px;
+    color: #8784a3;
+}
+
+.date2 {
+    font-family: "Red Hat Text", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    position: absolute;
+    margin-left: 258px;
+    margin-top: 30px;
+    color: #8784a3;
+}
+
+.date3 {
+    font-family: "Red Hat Text", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    position: absolute;
+    margin-left: 435px;
+    margin-top: 30px;
+    color: #8784a3;
+}
+
+.date4 {
+    font-family: "Red Hat Text", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: block;
+    position: absolute;
+    margin-left: 620px;
+    margin-top: 30px;
+    color: #8784a3;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+.myicons {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.myicons svg:hover path {
+    fill: #fc5d85 !important;
+}
+
+.icons {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.icons2 {
+
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.icons3 {
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 841px) {
+    .days, .hours, .minutes, .seconds {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        color: #fa5f87;
+        background-color: #34364f;
+        font-size: 2em;
+        text-align: center;
+        font-family: "Red Hat Text", sans-serif;
+        font-weight: 700;
+        padding-top: 10px;
+        -webkit-box-shadow: 0 15px 0 -1px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0 15px 0 -1px rgba(0, 0, 0, 0.67);
+        box-shadow: 0 15px 0 -1px #1a1a22;
+        border-radius: 10px;
+        margin-left: 40px;
+    }
+
+    #countdown {
+        width: 491px;
+    }
+
+    .date {
+        font-size: 13px;
+        margin-left: 50px;
+        letter-spacing: 3px;
+    }
+    .date2 {
+        font-size: 13px;
+        margin-left: 155px;
+        letter-spacing: 3px;
+    }
+    .date3 {
+        font-size: 13px;
+        margin-left: 260px;
+        letter-spacing: 3px;
+    }
+    .date4 {
+        font-size: 13px;
+        margin-left: 380px;
+        letter-spacing: 3px;
+    }
+
+    .launching {
+        width: 370px;
+        margin: 215px auto;
+    }
+
+  }
