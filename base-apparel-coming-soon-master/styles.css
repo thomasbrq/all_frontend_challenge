@@ -1,0 +1,210 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #c7969a;
+    opacity: 0.5; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #c7969a;
+    opacity: 0.5;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #c7969a;
+    opacity: 0.5;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+#left {
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-base {
+    width: 160px;
+    height: 35px;
+    margin-top: 65px;
+    margin-left: 250px;
+    background-image: url(images/logo.svg);
+    background-repeat: no-repeat;
+}
+
+.title-container {
+    width: 370px;
+    height: 190px;
+    margin-left: 250px;
+    margin-top: 135px;
+}
+
+.were {
+    color: #c7969a;
+    font-weight: 300;
+    font-size: 70px;
+    letter-spacing: 17px;
+}
+
+.coming-soon {
+    font-size: 64px;
+    letter-spacing: 17px;
+    font-weight: 600;
+}
+
+.desc-comingsoon {
+    width: 430px;
+    height: 70px;
+    margin-top: 40px;
+    margin-left: 250px;
+    color: #c7969a;
+    line-height: 25px;
+}
+
+.email-input {
+    width: 450px;
+    height: 65px;
+    margin-top: 45px;
+    margin-left: 250px;
+}
+
+.email-input input {
+    width: 420px;
+    height: 65px;
+    border-radius: 50px;
+    border: 1px solid #c7969a;
+    font-size: 17px;
+    color: #c7969a;
+    padding-left: 30px;
+}
+
+.nl-send {
+    position: absolute;
+    width: 100px;
+    height: 67px;
+    border-style: none;
+    margin-top: -67px;
+    margin-left: 355px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(248, 183, 187, 1) 0%, rgba(241, 145, 146, 1) 67%);
+}
+
+.ico-btn {
+    width: 20px;
+    height: 20px;
+    margin-left: 45px;
+    background-image: url("images/icon-arrow.svg");
+    background-repeat: no-repeat;
+}
+
+input:focus, button:focus {
+    outline: 0;
+}
+
+#right {
+    width: 40%;
+    height: 100%;
+    float: right;
+    background-image: url("images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-hero {
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-image: url("images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 35px;
+}
+
+.error {
+    color: #ec615f;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-ico {
+    width: 25px;
+    height: 25px;
+    margin-top: -45px;
+    margin-left: 315px;
+    position: absolute;
+    background-image: url("images/icon-error.svg");
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1206px) {
+    #left {
+        float: left;
+        width: 100%;
+        background: none;
+    }
+
+    .logo-base {
+        display: block;
+        margin: 50px 0 50px 50px;
+    }
+
+    #right {
+        display: none;
+    }
+
+    .image-hero {
+        display: block;
+    }
+
+    .nl-send {
+        margin-bottom: 150px;
+        margin-left: 330px; 
+        position: -ms-page;
+    }
+
+    .title-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .desc-comingsoon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .email-input {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .email-input input {
+        width: 380px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .error-ico {
+        margin-left: 290px;
+    }
+}

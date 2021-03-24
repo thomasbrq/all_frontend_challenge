@@ -1,0 +1,142 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background: #fff;
+    background: -moz-radial-gradient(circle, rgba(255, 255, 255, 1) 61%, rgba(212, 214, 211, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 1) 61%, rgba(212, 214, 211, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 61%, rgba(212, 214, 211, 1) 100%);
+}
+#container {
+    position: relative;
+}
+.fst-prt {
+    width: 100%;
+    height: 680px;
+}
+.txt {
+    width: 790px;
+    height: 90px;
+}
+h1 {
+    font-size: 80px;
+    width: 250px;
+    float: left;
+}
+h2 {
+    float: left;
+    padding-top: 12px;
+    padding-left: 20px;
+    font-size: 80px;
+    font-family: Yantramanav, sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #dbb336;
+    width: 50px;
+}
+.int-tl {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+.int-txt {
+    font-family: Yantramanav, sans-serif;
+    font-size: 57px;
+    float: left;
+    font-weight: 300;
+    font-style: italic;
+}
+.txt-2 {
+    height: 250px;
+    width: 800px;
+    margin-top: 65px;
+}
+.corp {
+    width: 100%;
+    height: 700px;
+}
+.txt-ar {
+    width: 800px;
+    min-height: 560px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: justify;
+}
+.tw-prg {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+}
+.ylw {
+    color: #dbb336;
+}
+li {
+    margin-top: 15px;
+}
+#footer {
+    width: 100%;
+    height: 512px;
+    margin-top: 30px;
+}
+.title {
+    width: 370px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+.rls-8 {
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    font-size: 35px;
+    font-weight: 200;
+    font-style: italic;
+}
+.csl3 {
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 18px;
+}
+@media (max-width: 860px) {
+    .int-tl {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .txt {
+        width: 365px;
+    }
+    .txt-2 {
+        width: 100%;
+    }
+    .int-txt {
+        font-size: 30px;
+    }
+    .txt-ar {
+        width: 400px;
+        font-size: 18px;
+    }
+    .csl3 {
+        width: 335px;
+        font-size: 30px;
+    }
+    .rls-8 {
+        width: 380px;
+        font-size: 25px;
+    }
+    #footer {
+        margin-top: 150px;
+    }
+}
