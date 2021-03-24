@@ -1,0 +1,243 @@
+body,
+html {
+    height: 100%;
+}
+#container {
+    min-height: 100%;
+    position: relative;
+}
+#header {
+    width: 100%;
+    height: 950px;
+    background-color: #000;
+    background-image: url(../img/Fallout-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 160px;
+}
+.s-fal {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 110px;
+}
+.s-76 {
+    color: #fff;
+    font-family: Yantramanav, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 110px;
+    margin-left: 25px;
+    color: #dbb336;
+}
+.txt {
+    margin-left: 130px;
+    padding-top: 150px;
+}
+.bethesda {
+    color: #fff;
+    display: block;
+    font-size: 50px;
+    background-color: #dbb336;
+    width: 300px;
+    padding: 5px;
+    letter-spacing: 7px;
+    transform: rotate(-90deg);
+    margin-top: 110px;
+    margin-left: -100px;
+}
+.par1 {
+    color: #fff;
+    width: 545px;
+    font-size: 65px;
+    text-align: left;
+    margin-left: 128px;
+    margin-top: -190px;
+    line-height: 70px;
+    font-weight: 300;
+    font-style: italic;
+}
+#corp {
+    width: 100%;
+    height: 1027px;
+    display: block;
+}
+.ct {
+    margin: 60px auto;
+    max-width: 1300px;
+    height: 735px;
+    text-align: justify;
+    padding: 60px;
+    font-size: 27px;
+    display: block;
+}
+.two-paragraphe {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+}
+.ylw {
+    color: #dbb336;
+}
+#footer {
+    clear: both;
+    width: 100%;
+    height: 350px;
+    background-color: #181b1d;
+}
+.guy {
+    position: absolute;
+    left: 6%;
+    top: 1881px;
+    width: 330px;
+    height: 340px;
+    background-image: url(../img/Fallout-Guy.png);
+    background-repeat: no-repeat;
+    background-size: 325px;
+}
+h1 {
+    color: #fff;
+    font-family: Lobster, sans-serif;
+    display: block;
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 188px;
+    font-size: 50px;
+}
+.re {
+    position: absolute;
+    right: 6%;
+    top: 1950px;
+    width: 330px;
+    height: 340px;
+    background-image: url(../img/Fallout-icon.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+.retxt{
+    text-align: center;
+    font-size: 28px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 11% auto;
+    margin-left: -70px;
+}
+.r-700-i {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.r-500-27 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+}
+.fs-27 {
+    font-size: 27px;
+}
+@media (max-width: 1066px) {
+    .guy,
+    .re {
+        display: none;
+    }
+}
+@media screen and (min-width: 530px) and (max-width: 860px) {
+    .ct {
+        font-size: 20px;
+    }
+    .par1 {
+        color: #fff;
+        width: 285px;
+        font-size: 30px;
+        text-align: left;
+        margin-left: 128px;
+        margin-top: -190px;
+        line-height: 70px;
+        font-weight: 300;
+        font-style: italic;
+    }
+    .s-fal {
+        font-size: 80px;
+    }
+}
+@media (max-width: 529px) {
+    .ct {
+        font-size: 18px;
+    }
+    .txt {
+        display: block;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 13%;
+        left: 20%;
+    }
+    .par1 {
+        color: #fff;
+        width: 226px;
+        font-size: 30px;
+        text-align: left;
+        margin-left: 128px;
+        margin-top: -190px;
+        line-height: 70px;
+        font-weight: 300;
+        font-style: italic;
+    }
+    .s-fal {
+        font-size: 50px;
+        margin-left: 40px;
+    }
+    .s-76 {
+        font-size: 80px;
+    }
+    .bethesda {
+        font-size: 44px;
+        width: 270px;
+        margin-top: 110px;
+        margin-left: -59px;
+    }
+}
+@media (max-width: 400px) {
+    .ct {
+        font-size: 15px;
+    }
+    .txt {
+        display: block;
+        margin: 0 27%;
+    }
+    .par1 {
+        color: #fff;
+        width: 194px;
+        font-size: 25px;
+        text-align: left;
+        line-height: 70px;
+        font-weight: 300;
+        font-style: italic;
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .s-fal {
+        font-size: 50px;
+        margin-left: 40px;
+        margin: 0 auto;
+        display: block;
+        width: 152px;
+    }
+    .s-76 {
+        width: 90px;
+        font-size: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    .bethesda {
+        font-size: 25px;
+        width: 187px;
+        display: block;
+        margin: 30px auto;
+        transform: rotate(0);
+    }
+    li {
+        margin-top: 20px;
+    }
+}
